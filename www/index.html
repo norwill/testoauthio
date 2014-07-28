@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test Oauth.io</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/localStorageModule.js"></script>
+    <script src="js/oauth.js"></script>
+    <script src="js/security.js"></script>
+    <script src="js/user.js"></script>   
+    
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter" ng-controller="MainCtrl">
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Test Oauth</h1>
+      </ion-header-bar>
+      <ion-content>
+      	<div>
+      		<button class="button button-block button-positive" ng-click="fbLogin()">
+        	<i class="icon ion-social-facebook"></i> Login with Facebook</button>
+    	</div>
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>
