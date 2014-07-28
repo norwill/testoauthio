@@ -1,8 +1,7 @@
 angular.module('resources.OAuth', []).//'ionic'
         factory('OAuth', ['$q', '$document', '$rootScope', function($q, $document, $rootScope) {
 
-            var _pubKey = 'pItnjBlkKSlpcTPLE_YDjaXU1Mc';
-            //var _pubKey = 'USE_YOUR_PUB_KEY_HERE';
+            var _pubKey = 'USE_YOUR_PUB_KEY_HERE';
             function isMobile() {
               return false;
               //return !!(ionic.Platform.isIOS() || ionic.Platform.isAndroid() || ionic.Platform.isWindowsPhone());
